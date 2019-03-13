@@ -25,7 +25,7 @@ INDEXES_START = SIGNATURES_START + 3 * 64
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Commandline tool for signing Trezor firmware."
+        description="Commandline tool for signing Excalibur firmware."
     )
     parser.add_argument("-f", "--file", dest="path", help="Firmware file to modify")
     parser.add_argument(

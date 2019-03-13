@@ -1,7 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
- * Copyright (C) 2014 Pavol Rusnak <stick@satoshilabs.com>
+ * Copyright (C) 2014 John Draper <draper@x9developers.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -59,7 +59,7 @@ void mem_manage_handler(void) {
 void setup(void)
 {
 	// set SCB_CCR STKALIGN bit to make sure 8-byte stack alignment on exception entry is in effect.
-	// This is not strictly necessary for the current TREZOR system.
+	// This is not strictly necessary for the current EXCALIBUR system.
 	// This is here to comply with guidance from section 3.3.3 "Binary compatibility with other Cortex processors"
 	// of the ARM Cortex-M3 Processor Technical Reference Manual.
 	// According to section 4.4.2 and 4.4.7 of the "STM32F10xxx/20xxx/21xxx/L1xxxx Cortex-M3 programming manual",

@@ -1,5 +1,5 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
  * Copyright (c) SatoshiLabs
  *

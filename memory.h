@@ -1,7 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
- * Copyright (C) 2014 Pavol Rusnak <stick@satoshilabs.com>
+ * Copyright (C) 2014 John Draper <draper@x9developers.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -42,17 +42,6 @@
  Sector  9 | 0x080A0000 - 0x080BFFFF | 128 KiB | firmware
  Sector 10 | 0x080C0000 - 0x080DFFFF | 128 KiB | firmware
  Sector 11 | 0x080E0000 - 0x080FFFFF | 128 KiB | firmware
-
- firmware header (occupies first 1 KB of the firmware)
- - very similar to trezor-core firmware header described in:
-   https://github.com/trezor/trezor-core/blob/master/docs/bootloader.md#firmware-header
- - differences:
-   * we don't use sigmask or sig field (these are reserved and set to zero)
-   * we introduce new fields immediately following the hash16 field:
-     - sig1[64], sig2[64], sig3[64]
-     - sigindex1[1], sigindex2[1], sigindex3[1]
-   * reserved[415] area is reduced to reserved[220]
- - see signatures.c for more details
 
  We pad the firmware chunks with zeroes if they are shorted.
 

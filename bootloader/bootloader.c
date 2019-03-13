@@ -1,7 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR project, https://trezor.io/
  *
- * Copyright (C) 2014 Pavol Rusnak <stick@satoshilabs.com>
+ * Copyright (C) 2014 John Draper <draper@x9developers.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -55,7 +55,7 @@ bool get_button_response(void)
 
 void show_halt(const char *line1, const char *line2)
 {
-	layoutDialog(&bmp_icon_error, NULL, NULL, NULL, line1, line2, NULL, "Unplug your TREZOR,", "reinstall firmware.", NULL);
+	layoutDialog(&bmp_icon_error, NULL, NULL, NULL, line1, line2, NULL, "Unplug your EXCALIBUR,", "reinstall firmware.", NULL);
 	shutdown();
 }
 
@@ -91,7 +91,7 @@ static void bootloader_loop(void)
 	oledClear();
 	oledDrawBitmap(0, 0, &bmp_logo64);
 	if (firmware_present_new()) {
-		oledDrawStringCenter(90, 10, "TREZOR", FONT_STANDARD);
+		oledDrawStringCenter(90, 10, "EXCALIBUR", FONT_STANDARD);
 		oledDrawStringCenter(90, 30, "Bootloader", FONT_STANDARD);
 		oledDrawStringCenter(90, 50, VERSTR(VERSION_MAJOR) "." VERSTR(VERSION_MINOR) "." VERSTR(VERSION_PATCH), FONT_STANDARD);
 	} else {
@@ -135,7 +135,7 @@ int main(void)
 		}
 
 		if (SIG_OK != check_firmware_hashes(hdr)) {
-			layoutDialog(&bmp_icon_error, NULL, NULL, NULL, "Broken firmware", "detected.", NULL, "Unplug your TREZOR,", "reinstall firmware.", NULL);
+			layoutDialog(&bmp_icon_error, NULL, NULL, NULL, "Broken firmware", "detected.", NULL, "Unplug your EXCALIBUR,", "reinstall firmware.", NULL);
 			shutdown();
 		}
 

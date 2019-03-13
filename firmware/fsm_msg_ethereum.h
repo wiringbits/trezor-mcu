@@ -1,7 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
- * Copyright (C) 2018 Pavol Rusnak <stick@satoshilabs.com>
+ * Copyright (C) 2018 John Draper <draper@x9developers.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -98,7 +98,7 @@ void fsm_msgEthereumGetAddress(const EthereumGetAddress *msg)
 	uint32_t slip44 = (msg->address_n_count > 1) ? (msg->address_n[1] & 0x7fffffff) : 0;
 	bool rskip60 = false;
 	uint32_t chain_id = 0;
-	// constants from trezor-common/defs/ethereum/networks.json
+	// constants from excalibur-common/defs/ethereum/networks.json
 	switch (slip44) {
 		case 137: rskip60 = true; chain_id = 30; break;
 		case 37310: rskip60 = true; chain_id = 31; break;

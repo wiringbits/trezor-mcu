@@ -1,7 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
- * Copyright (C) 2018 Pavol Rusnak <stick@satoshilabs.com>
+ * Copyright (C) 2018 John Draper <draper@x9developers.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -55,7 +55,7 @@ void check_bootloader(void)
 	int r = memory_bootloader_hash(hash);
 
 	if (!known_bootloader(r, hash)) {
-		layoutDialog(&bmp_icon_error, NULL, NULL, NULL, _("Unknown bootloader"), _("detected."), NULL, _("Unplug your TREZOR"), _("contact our support."), NULL);
+		layoutDialog(&bmp_icon_error, NULL, NULL, NULL, _("Unknown bootloader"), _("detected."), NULL, _("Unplug your EXCALIBUR"), _("contact our support."), NULL);
 		shutdown();
 	}
 
@@ -72,7 +72,7 @@ void check_bootloader(void)
 	// ATTEMPTING TO OVERWRITE BOOTLOADER WITH UNSIGNED FIRMWARE MAY BRICK
 	// YOUR DEVICE.
 
-	layoutDialog(&bmp_icon_warning, NULL, NULL, NULL, _("Updating bootloader"), NULL, NULL, _("DO NOT UNPLUG"), _("YOUR TREZOR!"), NULL);
+	layoutDialog(&bmp_icon_warning, NULL, NULL, NULL, _("Updating bootloader"), NULL, NULL, _("DO NOT UNPLUG"), _("YOUR EXCALIBUR!"), NULL);
 
 	// unlock sectors
 	memory_write_unlock();
@@ -101,7 +101,7 @@ void check_bootloader(void)
 		}
 	}
 	// show info and halt
-	layoutDialog(&bmp_icon_error, NULL, NULL, NULL, _("Bootloader update"), _("broken."), NULL, _("Unplug your TREZOR"), _("contact our support."), NULL);
+	layoutDialog(&bmp_icon_error, NULL, NULL, NULL, _("Bootloader update"), _("broken."), NULL, _("Unplug your EXCALIBUR"), _("contact our support."), NULL);
 	shutdown();
 #endif
 }

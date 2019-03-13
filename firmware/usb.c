@@ -1,7 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
- * Copyright (C) 2014 Pavol Rusnak <stick@satoshilabs.com>
+ * Copyright (C) 2014 John Draper <draper@x9developers.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -55,11 +55,11 @@
 
 #define USB_STRINGS \
 	X(MANUFACTURER, "SatoshiLabs") \
-	X(PRODUCT, "TREZOR") \
+	X(PRODUCT, "EXCALIBUR") \
 	X(SERIAL_NUMBER, config_uuid_str) \
-	X(INTERFACE_MAIN,  "TREZOR Interface") \
-	X(INTERFACE_DEBUG, "TREZOR Debug Link Interface") \
-	X(INTERFACE_U2F,   "TREZOR U2F Interface") \
+	X(INTERFACE_MAIN,  "EXCALIBUR Interface") \
+	X(INTERFACE_DEBUG, "EXCALIBUR Debug Link Interface") \
+	X(INTERFACE_U2F,   "EXCALIBUR U2F Interface") \
 
 #define X(name, value) USB_STRING_##name,
 enum {

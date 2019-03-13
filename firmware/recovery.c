@@ -1,7 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
- * Copyright (C) 2014 Pavol Rusnak <stick@satoshilabs.com>
+ * Copyright (C) 2014 John Draper <draper@x9developers.com>
  * Copyright (C) 2016 Jochen Hoenicke <hoenicke@gmail.com>
  *
  * This library is free software: you can redistribute it and/or modify
@@ -53,7 +53,7 @@ static bool dry_run;
  */
 static bool enforce_wordlist;
 
-/* For scrambled recovery Trezor may ask for faked words if
+/* For scrambled recovery Excalibur may ask for faked words if
  * seed is short.  This contains the fake word.
  */
 static char fake_word[12];

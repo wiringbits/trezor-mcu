@@ -1,5 +1,5 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
  * Copyright (C) 2016 Jochen Hoenicke <hoenicke@gmail.com>
  *
@@ -29,7 +29,7 @@ typedef struct {
 } U2FWellKnown;
 
 // contents generated via script in
-// trezor-common/defs/webauthn/gen.py
+// excalibur-common/defs/webauthn/gen.py
 // do not edit manually
 
 static const U2FWellKnown u2f_well_known[] = {

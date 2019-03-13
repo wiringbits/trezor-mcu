@@ -1,7 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
- * Copyright (C) 2017 Saleem Rashid <trezor@saleemrashid.com>
+ * Copyright (C) 2017 John Draper <draper@x9developers.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -66,7 +66,7 @@ void oledInit(void) {
 	int scale = emulatorScale();
 	int fullscreen = emulatorFullscreen();
 
-	SDL_Window *window = SDL_CreateWindow("TREZOR",
+	SDL_Window *window = SDL_CreateWindow("EXCALIBUR",
 		SDL_WINDOWPOS_UNDEFINED,
 		SDL_WINDOWPOS_UNDEFINED,
 		OLED_WIDTH * scale,

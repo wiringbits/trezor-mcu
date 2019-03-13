@@ -1,5 +1,5 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
  * Copyright (c) SatoshiLabs
  *
@@ -56,7 +56,7 @@ void __attribute__((noreturn)) __fatal_error(const char *expr, const char *msg, 
     oledDrawString(0, y, line, FONT_STANDARD);
     y += FONT_HEIGHT + 1;
 
-    oledDrawString(0, y, "Contact TREZOR support.", FONT_STANDARD);
+    oledDrawString(0, y, "Contact EXCALIBUR support.", FONT_STANDARD);
     oledRefresh();
 
     shutdown();

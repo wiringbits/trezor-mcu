@@ -1,9 +1,7 @@
 /*
- * This file is part of the TREZOR project, https://trezor.io/
+ * This file is part of the EXCALIBUR  project, https://trezor.io/
  *
- * Copyright (C) 2016 Alex Beregszaszi <alex@rtfs.hu>
- * Copyright (C) 2016 Pavol Rusnak <stick@satoshilabs.com>
- * Copyright (C) 2016 Jochen Hoenicke <hoenicke@gmail.com>
+ * Copyright (C) 2016 John Draper <draper@x9developers.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -299,7 +297,7 @@ static void layoutEthereumConfirmTx(const uint8_t *to, uint32_t to_len, const ui
 		char to_str[41];
 
 		bool rskip60 = false;
-		// constants from trezor-common/defs/ethereum/networks.json
+		// constants from excalibur-common/defs/ethereum/networks.json
 		switch (chain_id) {
 			case 30: rskip60 = true; break;
 			case 31: rskip60 = true; break;
